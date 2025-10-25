@@ -1,0 +1,230 @@
+{
+  "townlink_wireframe": {
+    "user_app": {
+      "overview": "App for residents to request errands, home services, and deliveries.",
+      "navigation": {
+        "type": "bottom_tab",
+        "tabs": [
+          "Home",
+          "My Tasks",
+          "Chat",
+          "Wallet",
+          "Profile"
+        ]
+      },
+      "screens": {
+        "Home": {
+          "header": "TownLink Logo + Greeting",
+          "sections": [
+            {
+              "type": "banner",
+              "content": "Promotional carousel or sponsor ads"
+            },
+            {
+              "type": "service_grid",
+              "title": "What do you need help with?",
+              "categories": [
+                "Home Services",
+                "Errands",
+                "Delivery",
+                "Repairs",
+                "Ride",
+                "Medicine Pickup"
+              ]
+            },
+            {
+              "type": "quick_request_button",
+              "label": "Create Custom Task"
+            }
+          ]
+        },
+        "Task Request Form": {
+          "fields": [
+            "Service Type Dropdown",
+            "Task Description",
+            "Pickup Location (map picker)",
+            "Drop Location (if applicable)",
+            "Preferred Time",
+            "Budget (optional)"
+          ],
+          "actions": [
+            "Submit Request",
+            "Cancel"
+          ]
+        },
+        "My Tasks": {
+          "sections": [
+            {
+              "title": "Ongoing Tasks",
+              "components": [
+                "Task Card (service type, helper name, status)"
+              ]
+            },
+            {
+              "title": "Past Tasks",
+              "components": [
+                "Task History List",
+                "Ratings & Reviews"
+              ]
+            }
+          ]
+        },
+        "Chat": {
+          "components": [
+            "Chat list with helpers",
+            "Search bar",
+            "Message screen (text, photo upload, location share)"
+          ]
+        },
+        "Wallet": {
+          "components": [
+            "Wallet balance",
+            "Transaction history",
+            "Add money (UPI)",
+            "Withdraw to UPI"
+          ]
+        },
+        "Profile": {
+          "components": [
+            "Profile photo & name",
+            "Contact details",
+            "My address list",
+            "Settings (language, notifications)",
+            "Logout button"
+          ]
+        }
+      }
+    },
+
+    "helper_app": {
+      "overview": "App for helpers/vendors to receive and complete local tasks.",
+      "navigation": {
+        "type": "drawer_menu",
+        "menu_items": [
+          "Dashboard",
+          "Available Tasks",
+          "Earnings",
+          "Profile",
+          "Support"
+        ]
+      },
+      "screens": {
+        "Dashboard": {
+          "components": [
+            "Total Tasks Completed",
+            "Earnings Summary",
+            "Live Tasks",
+            "Ratings Overview"
+          ]
+        },
+        "Available Tasks": {
+          "components": [
+            "Task list with location & fee",
+            "Accept / Decline buttons",
+            "Map preview"
+          ]
+        },
+        "Earnings": {
+          "components": [
+            "Daily/Weekly/Monthly view",
+            "Withdrawal option",
+            "Commission summary"
+          ]
+        },
+        "Profile": {
+          "components": [
+            "Name, phone, ID verification status",
+            "Service category list",
+            "Working hours",
+            "Location range slider",
+            "Logout"
+          ]
+        },
+        "Support": {
+          "components": [
+            "Help Center articles",
+            "Report a Problem form",
+            "Contact Admin via chat"
+          ]
+        }
+      }
+    },
+
+    "admin_panel": {
+      "overview": "Web-based dashboard for platform management.",
+      "navigation": {
+        "type": "sidebar_menu",
+        "menu_items": [
+          "Dashboard",
+          "Users",
+          "Helpers",
+          "Tasks",
+          "Payments",
+          "Reports",
+          "Ads & Sponsors",
+          "Settings"
+        ]
+      },
+      "screens": {
+        "Dashboard": {
+          "widgets": [
+            "Total Users",
+            "Active Helpers",
+            "Total Tasks Today",
+            "Revenue Summary",
+            "Pending Approvals"
+          ]
+        },
+        "Users": {
+          "components": [
+            "User list with search & filters",
+            "User detail view",
+            "Ban / Approve options"
+          ]
+        },
+        "Helpers": {
+          "components": [
+            "Helper list with verification status",
+            "View ID proofs",
+            "Activate/Deactivate helper"
+          ]
+        },
+        "Tasks": {
+          "components": [
+            "All task records",
+            "Filter by status (Pending, Ongoing, Completed)",
+            "Assign or reassign helper"
+          ]
+        },
+        "Payments": {
+          "components": [
+            "Transaction table",
+            "Commission and handling fee overview",
+            "Refund processing"
+          ]
+        },
+        "Reports": {
+          "components": [
+            "Revenue graph",
+            "User activity chart",
+            "Top service categories"
+          ]
+        },
+        "Ads & Sponsors": {
+          "components": [
+            "Active ads list",
+            "Add new sponsor banner",
+            "Schedule start/end dates"
+          ]
+        },
+        "Settings": {
+          "components": [
+            "Handling charge setup",
+            "Commission percentage input",
+            "Admin users management"
+          ]
+        }
+      }
+    }
+  }
+}

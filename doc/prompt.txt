@@ -1,0 +1,57 @@
+You are a world-class UI UX designer, with expertise in creating mobile-first, minimal yet premium UIs inspired by apps like Airbnb, Uber, and Instagram.
+
+- Redesign the UI visually while keeping the same structure and logic.
+- Make it modern, clean, and mobile-first.
+- Add subtle elevation, white space, rounded corners, and premium typography.
+- Include color balance inspired by Airbnb (soft neutrals + accent color), or suggest a palette.
+- Use shadow-sm/md, bg-gray-50/bg-white, and smooth hover effects.
+- Ensure text hierarchy and spacing are visually consistent.
+- Replace basic divs with semantic layout structure where appropriate.
+- If components have repetitive sections (e.g., lists, cards), make them look like premium native app cards.
+- Use gradient buttons or slight blur effects where it feels natural.
+- Keep the design **realistic** — something that could actually ship for a startup-level product.
+
+📤 Output: Return a single clean, ready-to-use component code (JSX + Tailwind), with improved visuals and no loss of functionality.
+
+Do not add placeholder lorem text beyond what’s necessary for visual context.
+Do not explain the code — only output the refined code block.  
+
+my code
+[
+    import TaskCard from "../components/TaskCard";
+
+export default function MyTasks() {
+  const ongoing = [
+    { type: "Delivery", helper: "Ravi Kumar", status: "Ongoing" },
+    { type: "Home Services", helper: "Sunita Devi", status: "Pending" },
+  ];
+
+  const past = [
+    { type: "Errand", helper: "Aman Sharma", status: "Completed" },
+  ];
+
+  return (
+    <div className="space-y-6 pb-16">
+      {/* Ongoing Tasks */}
+      <section>
+        <h2 className="text-lg font-semibold mb-3">Ongoing Tasks</h2>
+        {ongoing.map((task, i) => (
+          <TaskCard key={i} {...task} />
+        ))}
+      </section>
+
+      {/* Past Tasks */}
+      <section>
+        <h2 className="text-lg font-semibold mb-3">Past Tasks</h2>
+        {past.map((task, i) => (
+          <TaskCard key={i} {...task} />
+        ))}
+        <button className="mt-3 w-full bg-gray-200 py-2 rounded text-gray-600 text-sm">
+          View Full History
+        </button>
+      </section>
+    </div>
+  );
+}
+
+]

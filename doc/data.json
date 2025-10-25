@@ -1,0 +1,128 @@
+{
+  "app_name": "RoingLink",
+  "tagline": "Helping Hands, Just a Tap Away",
+  "mission": "To simplify everyday life in small towns by connecting people with trusted local helpers for errands, repairs, and deliveries — all in one reliable app.",
+  "concept": "A hyperlocal digital marketplace connecting residents with verified local helpers for errands, repairs, and deliveries. Users pay a small handling charge for convenience.",
+  
+  "user_journey": {
+    "user_side": [
+      "Open app and select category (Home Services, Errands, Local Rides, Medicine Delivery, Parcel Drop).",
+      "Fill a quick request form with pickup/drop location and task details.",
+      "Get matched with nearby verified helpers.",
+      "Chat, confirm, and pay via UPI or cash.",
+      "Track task status and rate the helper after completion."
+    ],
+    "helper_side": [
+      "Register and upload ID for verification.",
+      "Select service areas and working hours.",
+      "Receive task notifications from nearby users.",
+      "Accept, complete, and get paid instantly (minus handling fee).",
+      "Track daily and weekly earnings in dashboard."
+    ],
+    "admin_side": [
+      "Manage users, helpers, and categories.",
+      "Adjust handling fees and commissions.",
+      "Approve and verify vendors.",
+      "Run local sponsor ads or promotions.",
+      "Monitor analytics and task statistics."
+    ]
+  },
+  
+  "revenue_model": {
+    "handling_charge": "₹10–₹30 per task",
+    "vendor_subscription": "₹99–₹299 per month",
+    "featured_listings": "₹200–₹500 per month",
+    "commission": "5–10% per service",
+    "local_partnerships": "₹500 per month listing fee"
+  },
+  
+  "features": {
+    "user_features": [
+      "Quick service booking form",
+      "Geo-location based matching",
+      "UPI and cash payment options",
+      "Live order tracking with task status",
+      "WhatsApp integration",
+      "Review and rating system"
+    ],
+    "helper_features": [
+      "Profile verification (Aadhaar upload)",
+      "Accept or decline incoming tasks",
+      "Earnings dashboard",
+      "Push notifications for new tasks"
+    ], 
+    "admin_features": [
+      "User and helper management dashboard",
+      "Commission and fee configuration",
+      "Category and listing management",
+      "Analytics dashboard",
+      "Local ad management"
+    ]
+  },
+  
+  "use_cases": [
+    {
+      "scenario": "Elderly person needs medicine delivery",
+      "solution": "Request helper to buy and deliver medicines within 30 minutes."
+    },
+    {
+      "scenario": "Small shop needs local parcel delivery",
+      "solution": "Nearby delivery boy accepts task and completes delivery same day."
+    },
+    {
+      "scenario": "Resident needs AC repair",
+      "solution": "Book verified local technician and pay ₹20 handling fee."
+    },
+    {
+      "scenario": "User needs a ride to market",
+      "solution": "Book verified local auto or driver within the app."
+    }
+  ],
+  
+  "target_market": {
+    "location_type": "Small towns with population between 10,000 to 100,000",
+    "audience": [
+      "Middle-class families",
+      "Students",
+      "Shopkeepers",
+      "Working professionals"
+    ],
+    "market_gap": "Limited access to big delivery/service apps like Swiggy or Dunzo"
+  },
+
+  "financial_projection": {
+    "active_users": 300,
+    "active_helpers": 10,
+    "avg_tasks_per_day": 100,
+    "avg_handling_fee": "₹20",
+    "monthly_revenue": {
+      "handling_fees": "₹60,000",
+      "vendor_subscriptions": "₹5,000",
+      "ads": "₹5,000",
+      "total": "₹70,000"
+    },
+    "scaling_potential": "₹3,00,000 to ₹3,50,000 per month across 5 towns"
+  },
+
+  "tech_stack": {
+    "frontend": "React Native or Flutter",
+    "backend": "Node.js with Express",
+    "database": "PostgreSQL or Firebase",
+    "authentication": "Firebase Auth or JWT",
+    "payments": "Razorpay, Cashfree, or Paytm",
+    "maps": "Google Maps API",
+    "hosting": "Render, AWS, or Vercel",
+    "admin_panel": "React-based web dashboard"
+  },
+  
+  "branding": {
+    "logo_idea": "Minimal home + location pin design",
+    "colors": {
+      "primary": "Green (trust)",
+      "secondary": "Blue (technology)"
+    },
+    "tone": "Friendly, reliable, local"
+  }
+
+}
+
