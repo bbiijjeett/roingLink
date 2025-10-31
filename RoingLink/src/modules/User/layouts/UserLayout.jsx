@@ -1,5 +1,11 @@
 import { Outlet, NavLink } from "react-router-dom";
-import { Home, ClipboardList, MessageCircle, User } from "lucide-react";
+// import { Home, ClipboardList, MessageCircle, User } from "lucide-react";
+import { GoHomeFill } from "react-icons/go";
+import { IoCreate } from "react-icons/io5";
+import { FaClipboardList } from "react-icons/fa";
+import { TbMessageCircleFilled } from "react-icons/tb";
+import { FaUser } from "react-icons/fa";
+import { HiMapPin } from "react-icons/hi2";
 import logo from "../../../assets/logo_n.png"
 
 export default function UserLayout() {
@@ -16,10 +22,8 @@ export default function UserLayout() {
               Roing<span className="text-rose-600">Link</span>
             </span>
         </a>
-        {/* <span className="text-gray-600 text-xs sm:text-sm font-medium">
-          👋 Hello, User
-        </span> */}
-        <button
+
+        {/* <button
           className="
             flex items-center  
             p-2 bg-rose-50 text-rose-700 
@@ -27,7 +31,6 @@ export default function UserLayout() {
             hover:bg-rose-100 focus:outline-none focus:ring-2 focus:ring-rose-500
           "
         >
-          {/* Text is hidden on very small screens */}
           <span className="hidden sm:inline font-semibold text-sm mr-2">
             👋 Hello, User
           </span>
@@ -36,7 +39,21 @@ export default function UserLayout() {
             alt="User Avatar"
             className="w-8 h-8 rounded-full object-cover border border-rose-300"
           />
-        </button>
+        </button> */}
+
+       <div
+        className="
+          inline-flex items-center gap-1.5
+          px-2.5 py-1 rounded-full
+          bg-gray-100/60 text-gray-700 text-[13px] font-medium
+          backdrop-blur-sm select-none
+          transition-opacity duration-150
+          hover:opacity-80
+        "
+      >
+        <HiMapPin className="w-5 h-5 text-rose-700" />
+        <span className="text-sm font-semibold">Roing</span>
+      </div>
 
       </header>
 
@@ -48,11 +65,11 @@ export default function UserLayout() {
       {/* Bottom Navigation */}
       <nav className="fixed bottom-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-[0_-2px_10px_rgba(0,0,0,0.05)] border-t border-gray-100 flex justify-around sm:justify-evenly md:justify-center md:gap-10 items-center py-2 md:py-3 rounded-t-2xl z-20">
         {[
-          { to: "/", icon: Home, label: "Home" },
-          { to: "/task-form", icon: ClipboardList, label: "Create" },
-          { to: "/my-tasks", icon: ClipboardList, label: "Tasks" },
-          { to: "/chat", icon: MessageCircle, label: "Chat" },
-          { to: "/profile", icon: User, label: "Profile" },
+          { to: "/", icon: GoHomeFill, label: "Home" },
+          { to: "/task-form", icon: IoCreate, label: "Create" },
+          { to: "/my-tasks", icon: FaClipboardList, label: "Tasks" },
+          { to: "/chat", icon: TbMessageCircleFilled, label: "Chat" },
+          { to: "/profile", icon: FaUser, label: "Profile" },
         ].map(({ to, icon: Icon, label }) => (
           <NavLink
             key={to}
@@ -66,7 +83,7 @@ export default function UserLayout() {
             }
           >
             <Icon size={22} strokeWidth={2} className="mb-0.5 md:mb-0" />
-            <span>{label}</span>
+            {/* <span>{label}</span> */}
           </NavLink>
         ))}
       </nav>
